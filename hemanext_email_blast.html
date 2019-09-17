@@ -48,7 +48,12 @@ td, a, span {
 	text-decoration: none !important;
 }
 
-.em_small {
+.em_default {
+	display:flex !important;
+	margin-left:10px;
+}
+
+.em_mobile {
 	display: none !important;
 }
 span.MsoHyperlink {
@@ -85,7 +90,7 @@ span.MsoHyperlinkFollowed {
 }
 }
 @media screen and (max-width: 480px) {
-.em_small {
+.em_mobile {
 	display: inline !important;
 }
 .em_default {
@@ -146,7 +151,7 @@ u + .em_body .em_full_wrap {
         <!--//Header section-->
 
 		<!--Banner section -->
-		<tr style="display:flex !important; margin-left:10px" id="test_id">
+		<tr class="em_default">
           <td valign="top" align="center"><table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
               <tbody><tr>
                 <td valign="top" align="left"><img class="em_img" alt="AABB San Antonio 2019 Oct. 19-20" style="display:center; font-family:Arial, sans-serif; font-size:30px; line-height:34px; color:#000000; max-width:155px;" src="https://i.imgur.com/WnRY07L.jpg" width="auto" border="0" height="auto"></td>
@@ -169,10 +174,34 @@ u + .em_body .em_full_wrap {
             	</tr>
               </tbody></table></td>
         </tr>
+
+		<!-- mobile banner -->
+		<tr class="em_mobile">
+          <td valign="top" align="center" style="display:flex"><table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+              <tbody><tr>
+                <td valign="top" align="center"><img class="em_img" alt="AABB San Antonio 2019 Oct. 19-20" style="display:center; font-family:Arial, sans-serif; font-size:30px; line-height:34px; color:#000000; max-width:200px;" src="https://i.imgur.com/jZCnJz0.jpg" width="auto" border="0" height="auto"></td>
+              </tr>
+			  <tr>
+                <td style="font-size:0px; line-height:0px; height:10px;" height="10">&nbsp;</td>
+				<!--—this is space of (x)px acting as a bottom margin ---->
+              </tr>
+            </tbody></table></td>
+        </tr>
+		<tr class="em_mobile">
+          <td valign="top" align="center" style="display:flex"><table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+              <tbody><tr>
+                <td valign="top" align="center"><img class="em_img" alt="Visit HemaNext at Booth #930" style="display:center; font-family:Arial, sans-serif; font-size:30px; line-height:34px; color:#000000; max-width:400px;" src="https://i.imgur.com/e5oU30N.jpg" width="auto" border="0" height="auto"></td>
+              </tr>
+			  <tr>
+                <td style="font-size:0px; line-height:0px; height:20px;" height="20">&nbsp;</td>
+				<!--—this is space of (x)px acting as a bottom margin ---->
+              </tr>
+            </tbody></table></td>
+        </tr>
         <!--//Banner section-->
 
 		<!--Text section-->
-        <tr>
+        <tr class="em_default">
           <td valign="top" align="center"><table width="90% !important" cellspacing="0" cellpadding="0" border="0" align="center">
               <tbody><tr>
                 <td valign="top" align="center"><img class="em_img" alt="Improving the Quality and Function of the Red Blood Cell" style="display:block; font-family:Arial, sans-serif; font-size:30px; line-height:34px; color:#000000; max-width:700px;" src="https://i.imgur.com/Ddl3jFU.jpg" width="700" border="0"></td>
@@ -183,10 +212,23 @@ u + .em_body .em_full_wrap {
 			  </tr>
             </tbody></table></td>
         </tr>
+
+		<!--mobile section -->
+		<tr class="em_mobile">
+          <td valign="top" align="center" style="display:flex"><table width="90%" cellspacing="0" cellpadding="0" border="0" align="center">
+              <tbody><tr>
+                <td valign="top" align="center"><img class="em_img" alt="Improving the Quality and Function of the Red Blood Cell" style="display:center; font-family:Arial, sans-serif; font-size:30px; line-height:34px; color:#000000; max-width:400px;" src="https://i.imgur.com/n0fKGMv.jpg" width="auto" border="0" height="auto"></td>
+              </tr>
+			  <tr>
+                <td style="font-size:0px; line-height:0px; height:10px;" height="10">&nbsp;</td>
+				<!--—this is space of (x)px acting as a bottom margin ---->
+              </tr>
+            </tbody></table></td>
+        </tr>
 		<!--//Text Section-->
 
 		<!--Calendar section-->
-        <tr>
+        <tr class="em_default">
           <td valign="top" align="center"><table width="90% !important" cellspacing="0" cellpadding="0" border="0" align="center">
               <tbody><tr>
                 <td valign="top" align="center"><img class="em_img" alt="Mark your calendar — RBC Storage: The Oxygen Paradox on Saturday October 19 from 8:00am – 9:30am in the Hemisfair Ballroom II" style="display:block; font-family:Arial, sans-serif; font-size:30px; line-height:34px; color:#000000; max-width:700px;" src="https://i.imgur.com/8PDNAhx.jpg" width="700" border="0"></td>
@@ -196,8 +238,21 @@ u + .em_body .em_full_wrap {
 			  </tr>
             </tbody></table></td>
         </tr>
-		<!--//Calendar Section-->
+		<!-- mobile section -->
+		<tr class="em_mobile">
+          <td valign="top" align="center" style="display:flex"><table width="90% !important" cellspacing="0" cellpadding="0" border="0" align="center">
+              <tbody><tr>
+                <td valign="top" align="center"><img class="em_img" alt="Mark your calendar — RBC Storage: The Oxygen Paradox on Saturday October 19 from 8:00am – 9:30am in the Hemisfair Ballroom II" style="display:center; font-family:Arial, sans-serif; font-size:30px; line-height:34px; color:#000000; max-width:400px;" src="https://i.imgur.com/V31u9lp.jpg" width="auto" border="0" height="auto"></td>
+              </tr>
+			  <tr>
+                <td style="font-size:0px; line-height:0px; height:20px;" height="20">&nbsp;</td>
+				<!--—this is space of (x)px acting as a bottom margin ---->
+              </tr>
+            </tbody></table></td>
+        </tr>
 
+		<!--//Calendar Section-->
+		<!--Text Section -->
 		<tr class="em_default">
           <td valign="top" align="center" padding="35px 70px 30px"><table width="70% !important" cellspacing="0" cellpadding="0" border="0" align="center">
               <tbody><tr>
@@ -209,9 +264,22 @@ u + .em_body .em_full_wrap {
 			  </tr>
             </tbody></table></td>
         </tr>
+		<!-- mobile section -->
+		<tr class="em_mobile">
+          <td valign="top" align="center" style="display:flex"><table width="70% !important" cellspacing="0" cellpadding="0" border="0" align="center">
+              <tbody><tr>
+                <td valign="top" align="center"><img class="em_img" alt="Please visit the following presentations to learn more about our scientific advancements:" style="display:center; font-family:Arial, sans-serif; font-size:30px; line-height:34px; color:#000000; max-width:400px;" src="https://i.imgur.com/BH0oHBF.jpg" width="auto" border="0" height="auto"></td>
+              </tr>
+			  <tr>
+                <td style="font-size:0px; line-height:0px; height:10px;" height="10">&nbsp;</td>
+				<!--—this is space of (x)px acting as a bottom margin ---->
+              </tr>
+            </tbody></table></td>
+        </tr>
+		<!--//Text section-->
 
 		<!--Events section-->
-        <tr style="display:flex; margin-left:10px !important">
+        <tr class="em_default">
           <td valign="top" align="center"><table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
               <tbody><tr>
                 <td valign="top" align="center"><img class="em_img" alt="Saturday Schedule" style="display:block; font-family:Arial, sans-serif; font-size:30px; line-height:34px; color:#000000; max-width:700px;" src="https://i.imgur.com/zpm2Unz.jpg" width="700" border="0"></td>
@@ -226,7 +294,7 @@ u + .em_body .em_full_wrap {
 			<td style="font-size:0px; line-height:0px; height:15px;" height="15">&nbsp;</td>
 			<!--—this is space of 15px to separate the section title from content ---->
 		</tr>
-		<tr style="display:flex; margin-left:10px !important">
+		<tr class="em_default">
 			<td valign="top" align="center"><table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
                 <tbody><tr>
                   <td valign="top" align="center"><img class="em_img" alt="Sunday Schedule" style="display:block; font-family:Arial, sans-serif; font-size:30px; line-height:34px; color:#000000; max-width:700px;" src="https://i.imgur.com/vUTzB8U.jpg" width="700" border="0"></td>
@@ -237,6 +305,30 @@ u + .em_body .em_full_wrap {
   			  </tr>
               </tbody></table></td>
 		</tr>
+		<!-- mobile section -->
+		<tr class="em_mobile">
+		  <td valign="top" align="center" style="display:flex"><table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+			  <tbody><tr>
+				<td valign="top" align="center"><img class="em_img" alt="Saturday Schedule" style="display:center; font-family:Arial, sans-serif; font-size:30px; line-height:34px; color:#000000; max-width:400px;" src="https://i.imgur.com/0xHwD5I.jpg" width="auto" border="0" height="auto"></td>
+			  </tr>
+			  <tr>
+				<td style="font-size:0px; line-height:0px; height:20px;" height="20">&nbsp;</td>
+				<!--—this is space of (x)px acting as a bottom margin ---->
+			  </tr>
+			</tbody></table></td>
+		</tr>
+		<tr class="em_mobile">
+		  <td valign="top" align="center" style="display:flex"><table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+			  <tbody><tr>
+				<td valign="top" align="center"><img class="em_img" alt="Sunday Schedule" style="display:center; font-family:Arial, sans-serif; font-size:30px; line-height:34px; color:#000000; max-width:400px;" src="https://i.imgur.com/kdtc59V.jpg" width="auto" border="0" height="auto"></td>
+			  </tr>
+			  <tr>
+				<td style="font-size:0px; line-height:0px; height:20px;" height="20">&nbsp;</td>
+				<!--—this is space of (x)px acting as a bottom margin ---->
+			  </tr>
+			</tbody></table></td>
+		</tr>
+
 		<!--//Events Section-->
 
 		<!--Website URL-->
